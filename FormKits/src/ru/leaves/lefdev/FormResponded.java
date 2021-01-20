@@ -29,7 +29,7 @@ public class FormResponded implements Listener {
                     //Меню
                     case "§l §7Kits":
                         switch (button) {
-                            case "§l§8Стартовый набор":
+                            case "§l§8Starter Kit":
                                 if(this.cfg.get(p.getName()) == null) {
                                     if(!p.isOp()) this.cfg.set(p.getName(), true);
                                     Item sword = Item.get(272);
@@ -46,13 +46,13 @@ public class FormResponded implements Listener {
                                     p.getInventory().addItem(Item.get(50, 0, 16));
                                     p.getInventory().setChestplate(Item.get(299));
 
-                                    p.sendMessage("§a>§f Стартовый набор был успешно выдан!");
+                                    p.sendMessage("§a>§f You Recieved The Starter Kit!!");
                                     this.cfg.save(true);
                                 } else {
-                                    p.sendMessage("§4>§f Вы уже брали набор!");
+                                    p.sendMessage("§4>§f You have already received this set!");
                                 }
                                 break;
-                            case "§l§8Бронзовый набор":
+                            case "§l§Daily Kit":
                                 if(this.cfg.get(p.getName()) == null) {
                                     if(!p.isOp()) this.cfg.set(p.getName(), true);
                                     Item sword = Item.get(267);
@@ -69,13 +69,13 @@ public class FormResponded implements Listener {
                                     p.getInventory().addItem(Item.get(50, 0, 32));
                                     p.getInventory().setChestplate(Item.get(307));
 
-                                    p.sendMessage("§a>§f Бронзовый набор был успешно выдан!");
+                                    p.sendMessage("§a>§f You Have Recieved The Daily Kit!");
                                     this.cfg.save(true);
                                 } else {
-                                    p.sendMessage("§4>§f Вы уже брали набор!");
+                                    p.sendMessage("§4>§You have already received this set!");
                                 }
                                 break;
-                            case "§l§8Серебрянный набор":
+                            case "§l§8Weekly Kit":
                                 if(this.cfg.get(p.getName()) == null) {
                                     if(!p.isOp()) this.cfg.set(p.getName(), true);
                                     Item sword = Item.get(267);
@@ -97,13 +97,13 @@ public class FormResponded implements Listener {
                                     chestplate.addEnchantment(Enchantment.get(0));
                                     p.getInventory().setChestplate(chestplate);
 
-                                    p.sendMessage("§a>§f Серебрянный набор был успешно выдан!");
+                                    p.sendMessage("§a>§f You Have Recieved The Weekly Kit!");
                                     this.cfg.save(true);
                                 } else {
-                                    p.sendMessage("§4>§f Вы уже брали набор!");
+                                    p.sendMessage("§4>§f You have already received this set!");
                                 }
                                 break;
-                            case "§l§8Золотой набор":
+                            case "§lMonthly Kit":
                                 if(this.cfg.get(p.getName()) == null) {
                                     if(!p.isOp()) this.cfg.set(p.getName(), true);
                                     Item sword = Item.get(276);
@@ -128,10 +128,10 @@ public class FormResponded implements Listener {
                                     p.getInventory().setBoots(Item.get(309));
                                     p.getInventory().setLeggings(Item.get(308));
 
-                                    p.sendMessage("§a>§f Золотой набор был успешно выдан!");
+                                    p.sendMessage("§a>§f You Have Recieved The Montly Kit!");
                                     this.cfg.save(true);
                                 } else {
-                                    p.sendMessage("§4>§f Вы уже брали набор!");
+                                    p.sendMessage("§4>§f You Have Already Recieved This Kit!");
                                 }
                                 break;
                         }
